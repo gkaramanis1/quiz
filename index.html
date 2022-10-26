@@ -8,10 +8,55 @@
     <title>Coding Quiz</title>
 </head>
 <body>
+    <!--Header-->
+    <div class="container-1">
+        <div class="row">
+            <div class="vhs" id="viewScores">View Highscores</div>
+            <div class="tick-tock">Time: <span id="timer">75</span></div>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <div class="block text-center">
+            
+            <div class="container" id="home">
+                <h1 class="h1">Coding Quiz</h1>
+                <p class="intro">Try to answer the following code-related questions with the time limit. Keep in mind that incorrect answers will penalize your scoretime by ten seconds.</p>
+                <button  class="btn" id="startQuiz">Start Quiz</button>
+            </div>
+
+            <div class="container" id="quiz">
+                <h1 class="h1" id="question"></h1>
+                <div class="container" id="answers">
+                    <div class="row">
+                        <button class="btn text-left" id="0"></button>
+                    </div>
+                    <div class="row">
+                        <button class="btn text-left" id="1"></button>
+                    </div>
+                    <div class="row">
+                        <button class="btn text-left" id="2"></button>
+                    </div>
+                    <div class="row">
+                        <button class="btn text-left" id="3"></button>
+                    </div>
+                </div>
+            </div>
     
+            <div class="container" id="enterScore">
+                <h1 class="h1">All done!</h1>
+                <p class="intro">Your final score: <span id="score"></span></p>
+                <p class="intro">Enter initials: <input id="initials"></p>
+                <button class="btn" id="submitInitials">Submit</button>
+            </div>
 
-
-
+            <div class="container" id="highScores">
+                <h1 class="h1 font-weight-bolder">Highscores</h1>
+            </div>
+            <button class="btn" id="goBack">Back</button>
+            <button class="btn" id="clearScores">Clear Scores</button>
+        </div>
+    </div>
 
     <script src="assets/script.js"></script>
 </body>
