@@ -21,7 +21,7 @@ var score= 0;
 var currentQuestion = 0;
 var highScores = [];
 var interval;
-var timeProvided = 75;
+var timeLeft = 75;
 var seconds = 0;
 
 var questions = [
@@ -51,3 +51,25 @@ var questions = [
         answer: "boolean"
     }
 ]
+
+// Timer
+function countdown() {
+    timerEl.textContent = timeLeft;
+        timeInterval = setInterval(function () {
+        seconds++;
+        timerEl.textContent = timeLeft - seconds;
+
+        if (seconds >= timeLeft) {
+            currentQuestion = questions.length;
+            nextQuestion();
+        }
+    }, 1000);
+}
+
+function stopTimer() {
+    clearInterval(timeInterval);
+}
+
+startQuizEl.addEventListener("click", function () {
+    countdown();
+})
