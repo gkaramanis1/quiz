@@ -8,9 +8,15 @@
     font-size: 40px;
 }
 
+.btn {
+    justify-content: center
+}
 
-
-
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 @media (min-width: 1500px) {
     .portrait {
