@@ -185,5 +185,17 @@ clearScoresEl.addEventListener("click", function () {
     loadHighScores();
 });
 
-
+submitInitialsEl.addEventListener("click", function () {
+    let initialValue = initials.value.trim();
+    if (initialValue) {
+        let userScore = { username: initialValue, userScore: score };
+        initials.value = '';
+        highScores = JSON.parse(localStorage.getItem("playerScores")) || [];
+        highScores.push(userScore)
+        localStorage.setItem("playerScores", JSON.stringify(highScores));
+        hide(enterScoreEl);
+        loadHighScores();
+        change();
+    }
+});
 
