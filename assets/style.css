@@ -1,21 +1,27 @@
 body {
     background-image: linear-gradient(to bottom right,#33ccff, #ff99cc);
+    font-family: 'Fuzzy Bubbles', cursive;
+    margin: 150px;
+    padding: 50px;
 }
 
 .h1 {
     text-align: center;
-    font-size: 50px
+    font-size: 50px;
+    color: #fff;
 }
 
 .intro {
     text-align: center;
     font-size: 40px;
+    color: #fff;
 }
 
 .btn {
     background-color: #0a0a23;
     color: #fff;
     font-size: 30px;
+    font-family: 'Fuzzy Bubbles', cursive;
 }
 
 .center {
