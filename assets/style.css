@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+
+@media (min-width: 1500px) {
+    .portrait {
+        width: 500px;
+    }
+}
+
+/* For laptop screen sizes */
+@media (min-width: 750px) and (max-width: 1500px) {
+    .portrait {
+        width: 400px;
+    }
+}
+
+/* For mobile */
+@media (max-width: 750px) {
+    .portrait {
+        width: 300px;
+    }
+
+    .bottom-left {
+       width: 75%;
+       font-size: 1em;
+    }
+}

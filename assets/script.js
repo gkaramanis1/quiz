@@ -100,7 +100,7 @@ function checkAnswer(answer) {
 }
 
 // This will display the message for 1 second
-function showMessage(message) {
+function displayMessage(message) {
     let messageOne = document.createElement("one");
     let messageTwo = document.createElement("two");
     messageTwo.textContent = message;
@@ -113,7 +113,7 @@ function showMessage(message) {
 }
 
 function hide(el) {
-    el.style.diplay = "none";
+    el.style.display = "none";
 }
 
 function show(el) {
