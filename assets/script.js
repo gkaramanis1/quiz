@@ -38,7 +38,7 @@ var questions = [
     {
         title:"When a variable is declared within a function it is a...",
         choices:["Local scope","Global scope", "Small scope", "Big scope"],
-        answer: "local scope"
+        answer: "Local scope"
     },
     {
         title:"What tag is used to link javascript file to the HTML file?",
